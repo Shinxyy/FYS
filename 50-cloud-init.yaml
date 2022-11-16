@@ -1,0 +1,12 @@
+ network
+    version: 2
+    ethernets
+       eth0:
+           dhcp4: true
+           optional: true
+       wlan0:
+           dhcp4: no
+           addresses:
+           -192.168.4.1/24
+           nameservers:
+               addresses: [1.1.1.1, 1.0.0.1]
