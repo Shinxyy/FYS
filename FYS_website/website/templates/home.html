@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block navbar_element %}Logout{% endblock %}
+{% block content %}
+<h3 align="center">Welkom to the homepage {{ session["username"] }}</h3>
+<h5 align="center">Your ticket number: {{ session["ticket_number"] }}</h5>
+{% endblock %}
