@@ -30,6 +30,7 @@ systemctl start hostapd
 #dnsmasq.conf
 yes | cp -rf dnsmasq.conf /etc/dnsmasq.conf
 systemctl restart dnsmasq
+yes | cp -rf dnsmasq.service /lib/systemd/system/dnsmasq.service
 
 #netplan
 yes | cp -rf 50-cloud-init.yaml /etc/netplan/50-cloud-init.yaml
